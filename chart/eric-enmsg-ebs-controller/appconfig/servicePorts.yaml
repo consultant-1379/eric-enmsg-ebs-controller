@@ -1,0 +1,9 @@
+- name: http
+  port: 8080
+  targetPort: 8080
+- name: http1
+  port: 80
+  targetPort: {{.Values.spec.portHTTP}}
+- name: https
+  port: 443
+  targetPort: {{.Values.spec.portHTTPS}}
